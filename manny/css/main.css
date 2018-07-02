@@ -1,0 +1,29 @@
+ /* Header section */
+ #hero{
+     background: url('../img/image 3.png') no-repeat;
+     background-size:cover;
+     height: 600px;
+ }
+ .hero-content{
+     padding:100px;
+ }
+ .btn{
+    border-radius:80px !important;
+    background-color: #02d664 !important;
+ }
+ 
+ 
+ hr{
+     width:50px;
+     background-color: #02d664;
+    
+}
+ /* End of header section */
+ .clip{
+     height: 400px;
+ }
+ .img{
+     width:900px;
+     height:500px;
+ }
+ 
