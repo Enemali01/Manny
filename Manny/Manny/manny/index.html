@@ -222,27 +222,26 @@
      
 <!-- Keep in touch -->
 <section id="touch">
-    <div class="container text-justify">
+    <div class="container">
         <div class="row">
-            <div class="col-8">
-                    
-                    <hr class="v1"><h5>Keep in touch</h5>
-                    <p>Subscribe to our newsletter and never miss any updates.</p>
-                    <form class="form-inline">
-                            <div class="input-group">
-                              <div class="input-group-prepend ">
-                                    <input type="text" class="form-control-md" placeholder="Enter email Address" aria-label="Username" aria-describedby="basic-addon1">
-                                    <button class="btn btn-success ">Submit</button>
-                                </div>
-                            </div>
-                          </form>
-                                <p>We always like to hear from our community</p><br>
-                                <p>Contact us at <a href="">Info @tudolink.io</a></p>
-                </div>
-                
-            </div>
-            </div>
-        
+                <hr class="v1">
+            <h5>Keep in touch</h5>
+        </div>
+        <div class="row col-md-6">
+            <p>Subscribe to our newsletter and never miss any updates.</p>
+            <div class="input-group mb-3   ">
+                    <input type="email" class="input-touch form-control" placeholder="Please enter your email address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append input-touch">
+                      <button class="btn btn-touch" type="button">Submit</button>
+                    </div>
+             </div>
+        </div>
+            <div class="col-md-6"></div>
+            
+                    <p>We always like to hear from our community</p> 
+                    <p>Contact us at <a href="" class="info">Info @tudolink.io</a></p>
+       
+    </div>
 </section>
 
 <!-- Partnership -->
@@ -285,19 +284,30 @@
         <hr class="v1">
          <h5>FAQ</h5>
         </div>
-            <p class="lor">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum ducimus doloribus veniam tempore numquam molestias rerum, dolorum laudantium illo iusto?</p><br>
-            <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore laboriosam velit dolor blanditiis expedita consectetur exercitationem impedit tempore ratione suscipit perspiciatis maxime quibusdam, praesentium sed iure perferendis esse at tempora debitis id similique quae illum ullam reiciendis. Praesentium, laboriosam vero quasi corrupti beatae amet ut ab tenetur, doloremque nobis illum id velit repellat modi accusantium voluptatem enim consectetur ratione iure?</p>
-            <p class="lor">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum ducimus doloribus veniam tempore numquam molestias rerum, dolorum laudantium illo iusto?</p><br>
-            <p class="lor">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum ducimus doloribus veniam tempore numquam molestias rerum, dolorum laudantium illo iusto?</p><br>
-            <p class="lor">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum ducimus doloribus veniam tempore numquam molestias rerum, dolorum laudantium illo iusto?</p><br>
-    </div>  
+        <button class="collapsible"><h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, tenetur.</h5></button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button class="collapsible"><h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, at.</h5></button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button class="collapsible"><h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, facere.</h5></button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>          
+        <button class="collapsible"><h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque voluptatibus similique enim quam fugit quia voluptates ea perferendis officiis explicabo.</h5></button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div> 
+          </div>  
 </section>
 
 <!-- social media -->
      
 <section id="">
     <div class="container pt-5 pb-5 social">
-        <hr class="hr1"><h5>Social Mediai</h5>
+        <hr class="hr1"><h5>Social Media</h5>
        
         <div class="row d-flex justify-content-around">
                 <div class="col-md-1 col-4">
@@ -319,10 +329,10 @@
                          <i class="fa fa-youtube-play" style="font-size:36px; color:#FF0000"></i>
                     </div>
                     <div class="col-md-1 col-4">
-                        <i class="fa fa-instagram" style="font-size:36px;color:"></i>
+                        <i class="fa fa-instagram" style="font-size:36px"></i>
                     </div>
                     <div class="col-md-1 col-4">
-                        <i class="fa fa-medium" style="font-size:36px;color:"></i>
+                        <i class="fa fa-medium" style="font-size:36px;"></i>
                     </div>
                     <div class="col-md-2 col-4">
                         <i class="fa fa-github" style="font-size:36px"></i>
@@ -385,7 +395,24 @@
 
 
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
 
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+         if (content.style.maxHeight){
+       content.style.maxHeight = null;
+         } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+         } 
+        });
+          }
+        </script>
+    
 
 
 
