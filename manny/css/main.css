@@ -85,12 +85,51 @@
         width: 250px;
     }
     .btn-touch{
-        background-color: #02d664 !important;  
+        background-color: #02d664 !important; 
+        border-radius: 0px 80px 80px 0px !important; 
     }
     .info{
         color: #02d664;
     }
-    .input-group{
-        border-radius: 80px;
+    
+      .collapsible {
+          background-color: #0A0f2b;
+        color: #02d664;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
     }
     
+    .active, .collapsible:hover {
+        background-color:#0A0f2b;
+    }
+    
+    .collapsible:after {
+        content: '\005E';
+        /* color: white; */
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+    }
+    
+    .active:after {
+        content: "\02228";
+    }
+    
+    .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #0A0f2b;
+    }
+    .input-touch{
+        border-radius: 80px 0 0 80px !important;
+    }
+    .form-control{
+
+    }

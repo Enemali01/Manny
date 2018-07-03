@@ -234,9 +234,9 @@
         </div>
         <div class="row col-md-8">
             <p>Subscribe to our newsletter and never miss any updates.</p>
-            <div class="input-group mb-3 ">
-                    <input type="email" class="input-touch" placeholder="Please enter your email address" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
+            <div class="input-group mb-3   ">
+                    <input type="email" class="input-touch form-control" placeholder="Please enter your email address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append input-touch">
                       <button class="btn btn-touch" type="button">Submit</button>
                     </div>
              </div>
@@ -289,12 +289,23 @@
         <hr class="v1">
          <h5>FAQ</h5>
         </div>
-            <p class="lor">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum ducimus doloribus veniam tempore numquam molestias rerum, dolorum laudantium illo iusto?</p><br>
-            <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore laboriosam velit dolor blanditiis expedita consectetur exercitationem impedit tempore ratione suscipit perspiciatis maxime quibusdam, praesentium sed iure perferendis esse at tempora debitis id similique quae illum ullam reiciendis. Praesentium, laboriosam vero quasi corrupti beatae amet ut ab tenetur, doloremque nobis illum id velit repellat modi accusantium voluptatem enim consectetur ratione iure?</p>
-            <p class="lor">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum ducimus doloribus veniam tempore numquam molestias rerum, dolorum laudantium illo iusto?</p><br>
-            <p class="lor">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum ducimus doloribus veniam tempore numquam molestias rerum, dolorum laudantium illo iusto?</p><br>
-            <p class="lor">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum ducimus doloribus veniam tempore numquam molestias rerum, dolorum laudantium illo iusto?</p><br>
-    </div>  
+        <button class="collapsible"><h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, tenetur.</h5></button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button class="collapsible"><h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, at.</h5></button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button class="collapsible"><h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, facere.</h5></button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>          
+        <button class="collapsible"><h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque voluptatibus similique enim quam fugit quia voluptates ea perferendis officiis explicabo.</h5></button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div> 
+          </div>  
 </section>
 
 <!-- social media -->
@@ -383,10 +394,24 @@
                 
 
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        var coll = document.getElementsByClassName("collapsible");
+var i;
 
-
-
-
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+        </script>
+    
 
 
 
